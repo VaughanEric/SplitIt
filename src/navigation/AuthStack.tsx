@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import { Register, Login } from '../screens';
 import {useScreenOptions, useTranslation} from '../hooks';
+import ReceiptGroup from '../screens/ReceiptGroup';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,12 @@ export default () => {
         name="Login"
         component={Login}
         options={{headerShown: false}}
+      />
+      
+      <Stack.Screen
+        name="ReceiptGroup"
+        component={ReceiptGroup}
+        options={{title: t('navigation.receiptgroup')}}
       />
     </Stack.Navigator>
   );

@@ -6,6 +6,7 @@ import {
   ICategory,
   IExtra,
   ILocation,
+  IMemberItem,
   INotification,
   IProduct,
   IReceipt,
@@ -855,6 +856,33 @@ export const RECEIPTS: IReceipt[] = [
     timestamp: dayjs().unix(),
     subtotal: 15.57 + 1.23 + 0.0,
   },
+];
+
+export const MEMBERS: IMemberItem[] = [
+  {
+    id: 1,
+    name: 'Josh'
+  },
+  {
+      id: 2,
+      name: 'Hendon'
+  },
+  {
+      id: 3,
+      name: 'Joe'
+  },
+  {
+      id: 4,
+      name: 'Nico'
+  },
+  {
+      id: 5,
+      name: 'Bru'
+  },
+  {
+      id: 6,
+      name: 'Peyton'
+  }
 ];
 
 export default {
